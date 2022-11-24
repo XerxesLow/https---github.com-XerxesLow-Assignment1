@@ -1,0 +1,25 @@
+body
+{
+background-color: pink;
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+}
+
+.pictureIDK {
+    padding: 10px;
+}
+
+.displayFlex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.displaymid{
+    text-align: center;
+}
