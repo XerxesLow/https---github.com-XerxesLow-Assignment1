@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Nayeon</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </head>
         
           
 <body>
-    <h1>Nayeon</h1>
+    <h1 style="font-family:Ubuntu;">Nayeon</h1>
 
     <div class="displaymid">
     <img src="images/nayeonp.jpg" alt="" width="500" height="350">
@@ -21,6 +25,7 @@
 <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
+        <a href="index.html">Home</a>
       <a href="nayeon.html">Nayeon</a>
       <a href="jeongyeon.html">Jeongyeon</a>
       <a href="momo.html">Momo</a>
@@ -34,6 +39,16 @@
     </div>
   </div>
 
+
+
+  <button type="button" value="increase" class="increaseFont">
+    Increase Font 
+  </button>
+  <button type="button" value="decrease" class="decreaseFont">
+    Decrease Font 
+  </button>
+
+  <div style="font-family: Dosis ;" id="fontSize" class="data">
 <h2>About</h2>
 Im Nayeon (임나연; born Sep 22, 1995) is a South Korean singer and the oldest member of the Kpop group Twice under JYP Entertainment. Nayeon made her debut with Twice on Oct 20, 2015.
 
@@ -49,6 +64,7 @@ Profile
 <li>Weight: 47kg (104 lbs)</li>
 <li>Blood Type: A</li>
 </ul>
+
 
 
 
@@ -71,4 +87,37 @@ Profile
 <li>Nayeon is good friends with Blackpink members Jisoo and Jennie.</li>
 <li>Nayeon secretly attended a JYP Entertainment audition. She passed and officially became a trainee in 2010.</li>
 <li>In 2015, Nayeon became a participant on JYP’s survival show Sixteen. She won a place in the final lineup of the newly formed group, Twice.</li>
+</div>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+     $(".increaseFont,.decreaseFont").click(function(){
+        var type= $(this).val();
+        var curFontSize = $('.data').css('font-size');
+        if(type=='increase'){
+           $('.data').css('font-size', parseInt(curFontSize)+1);
+        } else{
+           $('.data').css('font-size', parseInt(curFontSize)-1);
+        }
+        // alert($('.data').css('font-size'));
+     });
+  });
+</script>
+
+
+
+
+<hr>
+
+<h3 class="displaymid" style="font-family: Dosis ;">
+    <a href= https://www.instagram.com/twicetagram> @twicetagram </a>  
+    <br>
+
+    <a href= https://twitter.com/jypetwice> @JYPETWICE </a> 
+    <br>
+    
+    <a href= https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0> @TWICE </a> 
+    <br>
+
+    <a href= https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA> @TWICE </a>  
+</h3>
